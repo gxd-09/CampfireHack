@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bm80jj5wbdlrg"]
+[gd_scene format=3 uid="uid://bm80jj5wbdlrg"]
 
 [ext_resource type="Script" uid="uid://o1u8laj8pxil" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://b84gj3fkhl5lr" path="res://assets/Dwarf Sprite Sheet 1.3v.png" id="2_g2els"]
@@ -172,25 +172,26 @@ radius = 11.045361
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 radius = 5.3851647
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=854755487]
+z_index = 5
 script = ExtResource("1_g2els")
 metadata/_edit_horizontal_guides_ = [-24.0]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=555610135]
 position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_fjrip")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.92408794
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1967522794]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=150109160]
 position = Vector2(-2, 3)
 shape = SubResource("CircleShape2D_qhqgy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217223883]
 position = Vector2(-2, 4)
 shape = SubResource("CircleShape2D_g2els")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=356270101]
