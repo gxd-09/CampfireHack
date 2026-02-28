@@ -1,0 +1,21 @@
+[gd_scene load_steps=0 format=3 uid="uid://brksvsf3deysk"]
+
+[ext_resource type="PackedScene" uid="uid://bm80jj5wbdlrg" path="res://scenes/player.tscn" id="1_uhqqe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6adnx"]
+
+[node name="Node2D" type="Node2D" unique_id=1831127836]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1509983751]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=67850438]
+root_node = NodePath("../..")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D" unique_id=278165279]
+z_index = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/CharacterBody2D" unique_id=574487661]
+shape = SubResource("CircleShape2D_6adnx")
+
+[node name="CharacterBody2D" parent="Node2D/CharacterBody2D" unique_id=1719421140 instance=ExtResource("1_uhqqe")]
+position = Vector2(31, 4)

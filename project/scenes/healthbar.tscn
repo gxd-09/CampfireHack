@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://brrksfcckr073"]
+
+[ext_resource type="Script" uid="uid://dkae8hopqhi3i" path="res://scripts/hearts.gd" id="1_8wl12"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8wl12"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjxg4"]
+bg_color = Color(0.40648237, 0.6717254, 0.4679652, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8wl12"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ulkio"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="ProgressBar" type="ProgressBar"]
+z_index = 2
+custom_minimum_size = Vector2(50, 4)
+offset_left = 103.0
+offset_top = 112.0
+offset_right = 154.0
+offset_bottom = 116.0
+theme_override_styles/background = SubResource("StyleBoxEmpty_8wl12")
+theme_override_styles/fill = SubResource("StyleBoxFlat_vjxg4")
+value = 60.0
+show_percentage = false
+script = ExtResource("1_8wl12")
+
+[node name="DamageBars" type="ProgressBar" parent="."]
+z_index = -5
+custom_minimum_size = Vector2(20, 1)
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 4.0
+theme_override_styles/background = SubResource("StyleBoxFlat_8wl12")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ulkio")
+value = 80.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
