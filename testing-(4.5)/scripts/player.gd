@@ -3,8 +3,8 @@ extends CharacterBody2D
 @export var attacking = false
 @onready var animation = $AnimatedSprite2D
 
-const SPEED = 150
-const JUMP_VELOCITY = -300
+const SPEED = 50.0
+const JUMP_VELOCITY = -400.0
 
 func _process(delta):
 	if Input.is_action_just_pressed("Attack"):

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0jxaipreoo4w"]
+
+[ext_resource type="Texture2D" uid="uid://cqsndi6fxnjkj" path="res://assets/pixil-frame-0 (1).png" id="1_ijr27"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kyaj"]
+size = Vector2(63, 20)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=1932361568]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=321484324]
+texture = ExtResource("1_ijr27")
+region_enabled = true
+region_rect = Rect2(256, 80, 64, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=780259329]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_7kyaj")
+one_way_collision = true

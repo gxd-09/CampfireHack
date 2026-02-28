@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://byubhebkevt4w"]
+
+[ext_resource type="Texture2D" uid="uid://0h3ar0iov7if" path="res://assets/backgrounds/grey_L1.png" id="1_cbsqf"]
+[ext_resource type="Script" uid="uid://cj13m86gacrqq" path="res://scripts/background.gd" id="1_wisxt"]
+[ext_resource type="Texture2D" uid="uid://b8lsdj13ngtob" path="res://assets/backgrounds/grey_L2.png" id="2_wisxt"]
+[ext_resource type="Texture2D" uid="uid://dg8vb8kgmyelj" path="res://assets/backgrounds/grey_L3.png" id="3_wax1t"]
+[ext_resource type="Texture2D" uid="uid://cg0f1dawk5yq" path="res://assets/backgrounds/grey_L4.png" id="4_1tmhi"]
+
+[node name="Background" type="Node2D"]
+script = ExtResource("1_wisxt")
+
+[node name="Base Layer" type="Sprite2D" parent="."]
+texture = ExtResource("1_cbsqf")
+offset = Vector2(-300, 0)
+
+[node name="Base Layer b" type="Sprite2D" parent="."]
+texture = ExtResource("1_cbsqf")
+offset = Vector2(340, 0)
+
+[node name="Base Layer 2" type="Sprite2D" parent="."]
+texture = ExtResource("2_wisxt")
+offset = Vector2(-300, 0)
+
+[node name="Base Layer 2b" type="Sprite2D" parent="."]
+texture = ExtResource("2_wisxt")
+offset = Vector2(340, 0)
+
+[node name="Base Layer 3" type="Sprite2D" parent="."]
+texture = ExtResource("3_wax1t")
+offset = Vector2(-300, 0)
+
+[node name="Base Layer 3b" type="Sprite2D" parent="."]
+texture = ExtResource("3_wax1t")
+offset = Vector2(340, 0)
+
+[node name="Base Layer 4" type="Sprite2D" parent="."]
+texture = ExtResource("4_1tmhi")
+offset = Vector2(-300, 0)
+
+[node name="Base Layer 4b" type="Sprite2D" parent="."]
+texture = ExtResource("4_1tmhi")
+offset = Vector2(340, 0)
