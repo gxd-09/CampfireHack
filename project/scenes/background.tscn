@@ -7,36 +7,45 @@
 [ext_resource type="Texture2D" uid="uid://cg0f1dawk5yq" path="res://assets/backgrounds/grey_L4.png" id="4_1tmhi"]
 
 [node name="Background" type="Node2D"]
+position = Vector2(906, -56)
 script = ExtResource("1_wisxt")
 
 [node name="Base Layer" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_cbsqf")
 offset = Vector2(-300, 0)
 
 [node name="Base Layer b" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_cbsqf")
 offset = Vector2(340, 0)
 
 [node name="Base Layer 2" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_wisxt")
 offset = Vector2(-300, 0)
 
 [node name="Base Layer 2b" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_wisxt")
 offset = Vector2(340, 0)
 
 [node name="Base Layer 3" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_wax1t")
 offset = Vector2(-300, 0)
 
 [node name="Base Layer 3b" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_wax1t")
 offset = Vector2(340, 0)
 
 [node name="Base Layer 4" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("4_1tmhi")
 offset = Vector2(-300, 0)
 
 [node name="Base Layer 4b" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("4_1tmhi")
 offset = Vector2(340, 0)

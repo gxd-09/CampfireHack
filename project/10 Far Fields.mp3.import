@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ymbmnc46sp64"
+path="res://.godot/imported/10 Far Fields.mp3-c4508ee5863df267f806db1d69698800.mp3str"
+
+[deps]
+
+source_file="res://10 Far Fields.mp3"
+dest_files=["res://.godot/imported/10 Far Fields.mp3-c4508ee5863df267f806db1d69698800.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

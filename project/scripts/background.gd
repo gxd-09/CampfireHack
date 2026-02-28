@@ -1,9 +1,9 @@
 extends Node2D
 
 const SPEED1 = 0
-const SPEED2 = -0.5
-const SPEED3 = -1
-const SPEED4 = -1.5
+const SPEED2 = -0.2
+const SPEED3 = -0.4
+const SPEED4 = -0.6
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
